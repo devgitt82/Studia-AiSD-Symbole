@@ -19,8 +19,7 @@ Na wejściu należy wypisać liczbę wystąpień najczęściej występującego s
 
 **Przykłady**
 ---
-<code><br>
-1110011
+<code><br>1110011
 1000000
 1010101
 0000001
