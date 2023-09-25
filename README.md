@@ -27,6 +27,7 @@ Na wejściu należy wypisać liczbę wystąpień najczęściej występującego s
 1100111
 </code>
 
+
 * zawiera 4 różne symbole:
 
 <code>
