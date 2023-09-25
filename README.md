@@ -1,70 +1,75 @@
-# Minimalizacja funkcji (alg. populacyjny).
+# Powtarzające się symbole.
 
-**Program szukający minimum funkcji podanej na wejściu. Agorytm metaheurystyczny - algorytm ewolucji różnicowej. Zadanie  przedmiotu AiSD na drugim roku studiów, programowanie proceduralne bez STL.**
+**Program wyszukujący najczęściej występujący symbol na obrazku. Symbol to zbiór czarnych punktów sąsiadujących ze sobą krawędzią (nie rogiem). Symbole różniące się obrotem czy będące swoimi odbiciami są różne.
+Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na drugim semestrzestudiów, programowanie proceduralne bez STL.**
 
-**Wymagania**
+**Sugerowane rozwiązania: przeszukiwanie wszerz lub w głąb do identyfikacji symboli, tablica haszowana do ich zliczania.**
 ---
-
-* Algorytm nie musi znajdować dokładnego rozwiązania, ale także za bardzo nie może się mylić.
-* W zadaniu można korzystać z obiektów i funkcji dostępnych w plikach nagłówkowych random i chrono.
-* STL niedostępny.
-* Wszystkie funkcje: log, silnia, potęgowanie, pierwiastkowanie itp. muszą byc napisane samodzielnie.
 
 **Wejście**
 ---
 
-Na początku wejścia zero lub więcej linii będzie zaczynało się od znaku # (hasz). Linie te są komentarzem i należy je pominąć. 
-Po komentarzach, w osobnej linii, pojawią się: liczba argumentów funkcji n oraz limit czasu t. Argumenty nazywane są pojedynczymi literami w następującej kolejności: x, y, z, a, b, c, d, e, f, g.
-Następnie w n kolejnych liniach pojawią się zakresy dla kolejnych argumentów. Każdy zakres to para dwóch liczb: dolna granica zakresu i górna granica zakresu (granice należą do zakresu). 
-Na końcu podana będzie funkcja do minimalizacji. Funkcja będzie podana w postaci ONP. Operacje, które mogą się pojawić to:
-* **+, -, \*, /** podstawowe operatory,
-* **pow** potęgowanie np. 2 3 pow pozostawia na stosie 8,
-* **sin, cos** funkcje trygonometryczne (argument w radianach) np. 0 cos pozostawia na stosie 1,
-* **x, y, z, a, b, c, d, e, f, g** dodanie na stos wartości odpowiadającej odpowiedniemu argumentowi,
-* **p**i dodanie na stos liczby Pi,
-* **neg**  zmiana znaku wartości na szczycie stosu,
-* **abs** wartość bezwzględna wartości na szczycie stosu,
-* **sqr** podniesienie wartości na szczycie stosu do kwadratu,
-* **sqrt** wyciągnięcie pierwiastka kwadratowego z wartości na szczycie stosu ,
-* **exp** zastąpienie wartości v na szczycie stosu przez e podniesione do potęgi v,
-* **log** zastąpienie wartości v na szczycie stosu przez logarytm natrualny z v,
-
-    Z limitu czasu podanego na wejściu można skorzystać do wyznaczenia liczby iteracji algorytmu.
+W pierwszej linii wejścia podaną zostane wymiary obrazka: szerokość (w) i wysokość (h). Żaden z wymiarów nie przekroczy 1000, żaden z nich nie będzie mniejszy niż 4. Każda z następnych h linii będzie zawierała w cyfr opisujących obrazek: 0 oznacza biały punkt, 1 to czarny punkt (należący do symbolu). Wymiary pojedynczego symbolu nie przekroczą 128x128 punktów. Odpowiedź będzie zawsze jednoznaczna (nie wystąpią dwa symbole o maksymalnej liczności).
 
 **Wyjście**
 ---
     
-Na wyjściu należy wypisać n liczb - wartości argumentów, dla których funkcja osiąga minimum.
+Na wejściu należy wypisać liczbę wystąpień najczęściej występującego symbolu oraz ten symbol w formacie takim jak obrazek, bez żadnej białej obwódki (w pierwszej i ostatniej kolumnie oraz w pierwszym i ostatnim wierszu symbolu powinien pojawić się przynajmniej jeden czarny punkt).
 
 **Przykłady**
 ---
-W pierwszym przykładzie szukamy minimum funkcji |x-5|.
-
-**Wejście**
 <code>
-1 1
--10 10
-x 5 - abs 
+1110011
+1000000
+1010101
+0000001
+1100111
 </code>
 
-**Wyjście**
+zawiera 4 różne symbole:
+
 <code>
-4.997559
+111
+100
+100
+</code>
+
+<code>
+001
+001
+111
+</code>
+
+<code>
+1
+</code>
+
+<code>
+11
 </code>
 
 ---
 
-W drugim przykładzie minimalizujemy funkcję (x-5)2+(y-5)2. Odleglosc od punktu (5, 5).
-
 **Wejście**
 <code>
-2 1
-0 10
-0 10
-x 5 - sqr y 5 - sqr +
+10 10
+0101010100
+0000000110
+0100010000
+0110011010
+0000000011
+1100000000
+0110010011
+0000011000
+1001010010
+1100000011
 </code>
 
 **Wyjście**
 <code>
-5.000000 4.999695
+6
+10
+11
 </code>
+
+---
