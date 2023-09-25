@@ -33,9 +33,7 @@ Na wejściu należy wypisać liczbę wystąpień najczęściej występującego s
 111
 100
 100
-</code>
-
-<code>
+<br>
 001
 001
 111
