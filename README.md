@@ -28,7 +28,7 @@ Na wejściu należy wypisać liczbę wystąpień najczęściej występującego s
 </code>
 >
 >
->####zawiera 4 różne symbole:
+> #### zawiera 4 różne symbole:
 
 <code>
 111
