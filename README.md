@@ -1,7 +1,8 @@
 # Powtarzające się symbole.
 
-**Program wyszukujący najczęściej występujący symbol na obrazku. Symbol to zbiór czarnych punktów sąsiadujących ze sobą krawędzią (nie rogiem). Symbole różniące się obrotem czy będące swoimi odbiciami są różne.
-Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na drugim semestrze studiów, programowanie proceduralne bez STL.**
+> Program wyszukujący najczęściej występujący symbol na obrazku. Symbol to zbiór czarnych punktów sąsiadujących ze sobą krawędzią (nie rogiem). Symbole różniące się obrotem czy będące swoimi odbiciami są różne.
+Obrazek (0 to biały punkt, 1 to czarny punkt)
+**Zadanie  z przedmiotu AiSD na drugim semestrze studiów, programowanie proceduralne bez STL.**
 
 * Sugerowane rozwiązania: przeszukiwanie wszerz lub w głąb do identyfikacji symboli, tablica haszowana do ich zliczania.
 * Pliki z przykładowymi danymi wejsciowymi i wyjściowymi znajdują się w dołączonym katalogu.
