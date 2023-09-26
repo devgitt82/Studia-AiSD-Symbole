@@ -6,8 +6,6 @@ Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na 
 * Sugerowane rozwiązania: przeszukiwanie wszerz lub w głąb do identyfikacji symboli, tablica haszowana do ich zliczania.
 * Pliki z przykładowymi danymi wejsciowymi i wyjściowymi znajdują się w dołączonym katalogu.
     
----
-
 **Wejście**
 ---
 
