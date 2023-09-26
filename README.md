@@ -48,7 +48,7 @@ Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na 
 ---
 
 **Wejście**
-<code>
+```
 10 10
 0101010100
 0000000110
@@ -60,13 +60,11 @@ Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na 
 0000011000
 1001010010
 1100000011
-</code>
+```
 
 **Wyjście**
-<code>
+```
 6
 10
 11
-</code>
-
----
+```
