@@ -16,7 +16,7 @@ Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na 
     
 > Na wejściu należy wypisać liczbę wystąpień najczęściej występującego symbolu oraz ten symbol w formacie takim jak obrazek, bez żadnej białej obwódki (w pierwszej i ostatniej kolumnie oraz w pierwszym i ostatnim wierszu symbolu powinien pojawić się przynajmniej jeden czarny punkt).
 
-**Przykłady**
+**Wytłumaczenie**
 ---
 ```
 1110011
@@ -45,6 +45,8 @@ Obrazek (0 to biały punkt, 1 to czarny punkt) -  Zadanie  z przedmiotu AiSD na 
 11
 ```
 
+
+**Przykłady**
 ---
 
 **Wejście**
